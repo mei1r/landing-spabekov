@@ -1,111 +1,390 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Детский центр развития в Алматы. Развивающие кружки, подготовка к школе, творчество и спорт для детей разных возрастов.">
-    <title>Детский центр развития «Умка» | Мейрбек Спабеков</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧸</text></svg>">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>«Радуга» — детский центр развития | кружки, занятия, запись</title>
+  <meta name="description" content="Детский центр развития «Радуга»: кружки и занятия для детей от 2 до 12 лет — логика, творчество, английский язык, подготовка к школе. Запись онлайн, пробное занятие бесплатно.">
+  <meta name="keywords" content="детский центр, развитие детей, кружки для детей, подготовка к школе, английский для детей">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌈</text></svg>">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
-    <header>
-        <div class="container header-inner">
-            <div class="logo">Центр «Умка»</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#programs">Наши кружки</a></li>
-                    <li><a href="#contact">Запись</a></li>
-                </ul>
-            </nav>
+  <a class="skip-link" href="#main">Перейти к основному содержанию</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Детский центр Радуга — на главную">
+        <span class="logo-icon" aria-hidden="true">🌈</span>
+        <span class="logo-text">Радуга</span>
+      </a>
+
+      <button class="burger" id="burgerBtn" aria-expanded="false" aria-controls="mainNav" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#clubs">Кружки</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#teachers">Педагоги</a></li>
+          <li><a href="#pricing">Цены</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary nav-cta">Записаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="hero-title">Детский центр развития «Радуга»</h1>
+          <p class="hero-subtitle">Кружки и занятия для детей от 2 до 12 лет: логика, творчество, английский язык и подготовка к школе в уютной атмосфере.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">Записаться на пробное занятие</a>
+            <a href="#clubs" class="btn btn-outline btn-lg">Посмотреть кружки</a>
+          </div>
+          <ul class="hero-stats" aria-label="Наши показатели">
+            <li><strong>8</strong><span>лет работы</span></li>
+            <li><strong>350+</strong><span>учеников</span></li>
+            <li><strong>12</strong><span>направлений</span></li>
+          </ul>
         </div>
-    </header>
-
-    
-    <main>
-    
-        <section class="hero">
-            <div class="container text-center">
-                <h1>Раскройте таланты вашего ребенка</h1>
-                <p>Современный детский центр развития: учимся, играем и растем вместе!</p>
-            </div>
-        </section>
-
-        
-        <section id="about" class="container section-padding">
-            <h2>О нашем центре</h2>
-            <p>Мы создали уникальное пространство, где каждый ребенок от 3 до 12 лет может найти занятие по душе. Наши педагоги используют современные методики развития, чтобы обучение было не только полезным, но и увлекательным.</p>
-        </section>
-
-        
-        <section id="programs" class="container section-padding bg-light">
-            <h2>Наши кружки</h2>
-            <div class="programs-grid">
-                <article class="card">
-                    
-                    <img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=400&q=80" alt="Дети рисуют красками">
-                    <div class="card-content">
-                        <h3>ИЗО и Творчество</h3>
-                        <p><strong>Возраст:</strong> 4-7 лет</p>
-                        <p>Развиваем мелкую моторику, воображение и чувство цвета через рисунок и лепку.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1546410531-bea5aad028af?auto=format&fit=crop&w=400&q=80" alt="Ребенок собирает робота">
-                    <div class="card-content">
-                        <h3>Робототехника</h3>
-                        <p><strong>Возраст:</strong> 7-12 лет</p>
-                        <p>Основы программирования, логики и конструирования. Собираем первых роботов!</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80" alt="Дети учат английский">
-                    <div class="card-content">
-                        <h3>Английский язык</h3>
-                        <p><strong>Возраст:</strong> 5-10 лет</p>
-                        <p>Изучение языка в игровой форме, песни, мультфильмы и разговорная практика.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        
-        <section id="contact" class="container section-padding">
-            <h2>Запишитесь на пробное занятие</h2>
-            <p class="text-center">Оставьте свои данные, и мы подберем идеальную группу для вашего ребенка.</p>
-            
-            <form action="#" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Имя родителя:</label>
-                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Электронная почта:</label>
-                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Возраст ребенка и пожелания:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Напишите сообщение..." required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Отправить заявку</button>
-            </form>
-        </section>
-    </main>
-
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Детский центр развития «Умка». Автор: Мейрбек Спабеков. Учебный проект.</p>
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1587616211892-b2e1ec7c1f7c?w=700&h=600&fit=crop"
+               alt="Дети занимаются творчеством за столом в детском центре развития" width="700" height="600" loading="eager">
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- О НАС -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=500&fit=crop"
+               alt="Педагог занимается с группой детей в игровой форме" width="600" height="500" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h2 id="about-title">О нас</h2>
+          <p>«Радуга» — это детский центр развития, где ребёнок учится через игру. Мы работаем с 2016 года и помогаем детям от 2 до 12 лет развивать мышление, речь, творческие способности и уверенность в себе.</p>
+          <p>Наша методика построена на балансе между обучением и игрой: каждое занятие — это маленькое приключение, после которого ребёнок хочет прийти снова.</p>
+          <h3>Наша миссия</h3>
+          <p>Создать пространство, в котором каждый ребёнок раскрывает свои таланты в комфортном темпе, под присмотром внимательных и опытных педагогов.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- КРУЖКИ -->
+    <section class="section section-alt" id="clubs" aria-labelledby="clubs-title">
+      <div class="container">
+        <h2 id="clubs-title">Наши кружки и занятия</h2>
+        <p class="section-lead">Выбирайте направление по возрасту и интересам ребёнка — от раннего развития до подготовки к школе.</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=400&h=260&fit=crop"
+                 alt="Малыш собирает пирамидку на занятии раннего развития" width="400" height="260" loading="lazy">
+            <div class="card-body">
+              <h3>Раннее развитие</h3>
+              <p class="card-age">2–4 года</p>
+              <p>Развитие мелкой моторики, речи и сенсорики в игровой форме вместе с мамой или самостоятельно.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1587691592099-24045742c181?w=400&h=260&fit=crop"
+                 alt="Дети рисуют красками на уроке творчества" width="400" height="260" loading="lazy">
+            <div class="card-body">
+              <h3>Творческая студия</h3>
+              <p class="card-age">4–10 лет</p>
+              <p>Рисование, лепка, аппликация — развиваем фантазию, усидчивость и мелкую моторику.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=260&fit=crop"
+                 alt="Дети играют в настольную логическую игру за столом" width="400" height="260" loading="lazy">
+            <div class="card-body">
+              <h3>Логика и мышление</h3>
+              <p class="card-age">5–10 лет</p>
+              <p>Задачи, головоломки и настольные игры для развития логического и математического мышления.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=260&fit=crop"
+                 alt="Ребёнок изучает английский язык по карточкам с педагогом" width="400" height="260" loading="lazy">
+            <div class="card-body">
+              <h3>Английский язык</h3>
+              <p class="card-age">4–12 лет</p>
+              <p>Игровое погружение в язык: песни, карточки, мультфильмы и живое общение с преподавателем.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=260&fit=crop"
+                 alt="Ребёнок пишет буквы в тетради на занятии по подготовке к школе" width="400" height="260" loading="lazy">
+            <div class="card-body">
+              <h3>Подготовка к школе</h3>
+              <p class="card-age">6–7 лет</p>
+              <p>Чтение, письмо, счёт и первый школьный опыт — уверенный старт в первый класс.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=400&h=260&fit=crop"
+                 alt="Дети танцуют на занятии по ритмике" width="400" height="260" loading="lazy">
+            <div class="card-body">
+              <h3>Ритмика и танцы</h3>
+              <p class="card-age">3–10 лет</p>
+              <p>Музыкально-двигательные занятия для развития координации, ритма и уверенности в себе.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section" id="advantages" aria-labelledby="advantages-title">
+      <div class="container">
+        <h2 id="advantages-title">Почему выбирают нас</h2>
+        <div class="advantages-grid">
+          <article class="advantage">
+            <span class="advantage-icon" aria-hidden="true">👩‍🏫</span>
+            <h3>Опытные педагоги</h3>
+            <p>Работают только специалисты с профильным педагогическим образованием и опытом от 3 лет.</p>
+          </article>
+          <article class="advantage">
+            <span class="advantage-icon" aria-hidden="true">👥</span>
+            <h3>Маленькие группы</h3>
+            <p>До 8 детей в группе — каждому ребёнку хватает внимания и поддержки педагога.</p>
+          </article>
+          <article class="advantage">
+            <span class="advantage-icon" aria-hidden="true">🎯</span>
+            <h3>Индивидуальный подход</h3>
+            <p>Учитываем темп, интересы и особенности каждого ребёнка при построении занятий.</p>
+          </article>
+          <article class="advantage">
+            <span class="advantage-icon" aria-hidden="true">🛡️</span>
+            <h3>Безопасность</h3>
+            <p>Видеонаблюдение, ответственные администраторы и комфортное безопасное помещение.</p>
+          </article>
+          <article class="advantage">
+            <span class="advantage-icon" aria-hidden="true">📍</span>
+            <h3>Удобное расположение</h3>
+            <p>Центр находится в шаговой доступности от метро, есть парковка для родителей.</p>
+          </article>
+          <article class="advantage">
+            <span class="advantage-icon" aria-hidden="true">🎁</span>
+            <h3>Пробное занятие бесплатно</h3>
+            <p>Вы сможете оценить формат обучения и атмосферу до оплаты абонемента.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПЕДАГОГИ -->
+    <section class="section section-alt" id="teachers" aria-labelledby="teachers-title">
+      <div class="container">
+        <h2 id="teachers-title">Наши педагоги</h2>
+        <div class="teachers-grid">
+          <article class="teacher-card">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop"
+                 alt="Портрет педагога Анны Ивановой" width="300" height="300" loading="lazy">
+            <h3>Анна Иванова</h3>
+            <p class="teacher-role">Педагог раннего развития</p>
+            <p>Стаж 6 лет. Специализируется на сенсорном и речевом развитии детей 2–4 лет.</p>
+          </article>
+          <article class="teacher-card">
+            <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=300&h=300&fit=crop"
+                 alt="Портрет педагога Дмитрия Петрова" width="300" height="300" loading="lazy">
+            <h3>Дмитрий Петров</h3>
+            <p class="teacher-role">Преподаватель логики</p>
+            <p>Стаж 5 лет. Готовит детей к олимпиадам и развивает математическое мышление.</p>
+          </article>
+          <article class="teacher-card">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop"
+                 alt="Портрет педагога Елены Смирновой" width="300" height="300" loading="lazy">
+            <h3>Елена Смирнова</h3>
+            <p class="teacher-role">Преподаватель английского языка</p>
+            <p>Стаж 7 лет. Сертифицированный преподаватель, ведёт занятия по игровой методике.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title">Стоимость занятий</h2>
+        <p class="section-lead">Гибкие абонементы — оплачивайте только те занятия, которые нужны вашему ребёнку.</p>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Разовое занятие</h3>
+            <p class="price">2 500 ₸</p>
+            <ul>
+              <li>Любой кружок на выбор</li>
+              <li>Без обязательств</li>
+              <li>Пробное занятие бесплатно</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Записаться</a>
+          </article>
+          <article class="price-card price-card-featured">
+            <p class="price-badge">Популярный</p>
+            <h3>Абонемент на 8 занятий</h3>
+            <p class="price">17 000 ₸</p>
+            <ul>
+              <li>Скидка 15% от разовой цены</li>
+              <li>Один кружок в месяц</li>
+              <li>Перенос занятий при болезни</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Записаться</a>
+          </article>
+          <article class="price-card">
+            <h3>Абонемент на 2 кружка</h3>
+            <p class="price">30 000 ₸</p>
+            <ul>
+              <li>16 занятий в месяц</li>
+              <li>Скидка 25%</li>
+              <li>Гибкое расписание</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline">Записаться</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ / ФОРМА -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 id="contact-title">Контакты и запись</h2>
+          <p>Оставьте заявку — мы перезвоним в течение дня и подберём удобное расписание.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <span>г. Алматы, ул. Абая, 100, офис 12</span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <a href="tel:+77001234567">+7 (700) 123-45-67</a>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <a href="mailto:info@raduga-center.kz">info@raduga-center.kz</a>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">🕘</span>
+              <span>Пн–Сб: 9:00–19:00</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Записаться на пробное занятие</h3>
+
+          <div class="form-group">
+            <label for="name">Имя родителя <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required minlength="2" autocomplete="name" placeholder="Как к вам обращаться">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__">
+          </div>
+
+          <div class="form-group">
+            <label for="club">Интересующий кружок</label>
+            <select id="club" name="club">
+              <option value="">Не выбрано</option>
+              <option value="early">Раннее развитие</option>
+              <option value="art">Творческая студия</option>
+              <option value="logic">Логика и мышление</option>
+              <option value="english">Английский язык</option>
+              <option value="school">Подготовка к школе</option>
+              <option value="dance">Ритмика и танцы</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Сообщение <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="4" required minlength="5" placeholder="Расскажите о возрасте ребёнка и пожеланиях"></textarea>
+          </div>
+
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Я согласен(на) на обработку персональных данных <span aria-hidden="true">*</span></label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg">Отправить заявку</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon" aria-hidden="true">🌈</span>
+        <span>Детский центр «Радуга»</span>
+      </div>
+      <nav aria-label="Навигация в подвале сайта">
+        <ul class="footer-nav">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#clubs">Кружки</a></li>
+          <li><a href="#pricing">Цены</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">© 2026 Детский центр «Радуга». Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Бургер-меню для мобильной версии
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mainNav = document.getElementById('mainNav');
+    burgerBtn.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('open');
+      burgerBtn.classList.toggle('open', isOpen);
+      burgerBtn.setAttribute('aria-expanded', isOpen);
+    });
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        burgerBtn.classList.remove('open');
+        burgerBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Простая обработка отправки формы (без бэкенда)
+    const form = document.getElementById('contactForm');
+    const formNote = document.getElementById('formNote');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (form.checkValidity()) {
+        formNote.textContent = 'Спасибо! Заявка отправлена, мы скоро свяжемся с вами.';
+        form.reset();
+      } else {
+        formNote.textContent = 'Пожалуйста, заполните обязательные поля корректно.';
+        form.reportValidity();
+      }
+    });
+  </script>
 
 </body>
 </html>
